@@ -74,10 +74,6 @@ main .new-updates .updates img {
     display: flex;
     justify-content: space-around;
 }
-.updates .buttons {
-    display: flex;
-    justify-content: space-around;
-}
 
 @media (min-width: 500px) {
     .new-updates {
@@ -117,5 +113,17 @@ main .new-updates .updates img {
 .button:hover {
     color: #000000;
     background-color: orangered;
+    cursor: pointer;
+}
+
+.updates-button {
+    border-color: orange;
+    color: orange;
+    background-color: transparent;
+}
+
+.updates-button:hover {
+    background-color: orangered;
+    color: black;
     cursor: pointer;
 }
