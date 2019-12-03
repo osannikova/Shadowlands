@@ -1,98 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Shadowlands</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <header>
-        <div class="conteiner">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Shadowlands</title>
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <header>
             <nav>
-                <a href="#">Game</a>
-                <a href="#">News</a>
-                <a href="#">Forums</a>
-                <a href="#">Shop</a>
-                <a href="#">Log in</a>
-                <a href="#">Try Free</a>
+                <p class="logo">Shadowlends<p>
+                <ul class="menu">
+                    <li><a href="#">Game</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Forums</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Log in</a></li>
+                    <li><a href="#">Try Free</a></li>
+                </ul>
             </nav>
-            <img src="img/shadowlends.jpg" alt="shadowlends">
-        </div>
-    </header>
-<main>
-    <article>
-        <h1>Shadowlands</h1>
-        <p>What lies beyond the world you know? The Shadowlands, resting place for every mortal 
+            <div class="banner">
+                <h1>Shadowlends</h1>
+                <button class="button">Play Now</button>
+            </div>
+        </header>
+        <main>        
+            <p>What lies beyond the world you know? The Shadowlands, resting place for every mortal 
         soul—virtuous or vile—that has ever lived. Journey through planes of torment and
         imprisonment to those of rebirth and eternal reward.</p>
-    </article>
-    <form>
-        <button>Explore The Shadowlands</button>
-    </form>
-    <section>
-        <h2>New Updates</h2>
-        <img src="img/shadowlends-preview.jpg" alt="Shadowlends-preview" width=200>
-        <p>Those who have lived a life of service are drawn to Bastion to assume the highest duty of all—carrying 
+            
+            <form>
+                <button>Explore The Shadowlands</button>
+            </form>
+
+
+            <h2 id="new-updates">New Updates</h2>
+        <div class="new-updates">
+            <article class="updates">
+                <h3>Bastion</h3>
+                <img src="img/shadowlends-preview.jpg" alt="Shadowlends-preview">
+                <p>Those who have lived a life of service are drawn to Bastion to assume the highest duty of all—carrying 
         souls to the Shadowlands. Amongst Bastion’s gleaming spires and sweeping vistas await challenges 
         to test the mettle of the steadfast kyrians.</p>
-        <img src="img/shadowlends-ardenweald.jpg" alt="Shadowlends-ardenweald" width=200>
-        <p>A vibrant afterlife for those closely connected to the wild, Ardenweald is a domain of endless 
+                <div class="buttons">
+                    <button class="buttons updates">More</button>                    
+                </div>
+            </article>
+            <article class="updates">
+                <h3>Ardenweald</h3>
+                <img src="img/shadowlends-ardenweald.jpg" alt="Shadowlends-ardenweald">
+                <p>A vibrant afterlife for those closely connected to the wild, Ardenweald is a domain of endless 
         restoration tended by the mystic night fae. Within this eternal forest, 
         massive dream trees draw in precious anima—soul essence—to feed the spirits of nature awaiting rebirth.</p>
-        <img src="img/shadowlends-maldraxxus.jpg" alt="Shadowlends-Maldraxxus" width=200>
-        <p>Within war-torn Maldraxxus, might—of all kinds—makes right. Here, in the birthplace of necromantic magic, 
+                <div class="buttons">
+                    <button class="buttons updates">More</button>                    
+                </div>
+            </article>
+            <article class="updates">
+                <h3>Maldraxxus</h3>
+                <img src="img/shadowlends-maldraxxus.jpg" alt="Shadowlends-Maldraxxus">
+                <p>Within war-torn Maldraxxus, might—of all kinds—makes right. Here, in the birthplace of necromantic magic, 
         those who master the powers of death turn legions of ambitious souls into relentless undead armies.</p>
-    </section>
-    <section>
-        <h2>Screenshots</h2>
-            <img src="img/screenshot-selfie-camera.jpg" alt="screenshot">
-            <img src="img/screenshot-azuka.jpg" alt="screenshot">
-            <img src="img/screenshot-oregorger.jpg" alt="screenshot">
-            <img src="img/screenshot-selfie.jpg" alt="screenshot">      
-    </section>
-    <form>
-        <button>Buy Now</button>
-    </form>
-    <section>
-        <h2>Contact us to get the 7-Day trial</h2>
-        <form method="post" action="https://formspree.io/xbjllkog">
-        <label>Your Name:
+                <div class="buttons">
+                    <button class="buttons updates">More</button>                    
+                </div>
+            </article>
+        </div>
+
+           
+            <!--<section>
+                <h2>Screenshots</h2>
+                <img src="img/screenshot-selfie-camera.jpg" alt="screenshot">
+                <img src="img/screenshot-azuka.jpg" alt="screenshot">
+                <img src="img/screenshot-oregorger.jpg" alt="screenshot">
+                <img src="img/screenshot-selfie.jpg" alt="screenshot">
+            </section>
+            <form>
+                <button>Buy Now</button>
+            </form>
+            <section>
+                <h2>Contact us to get the 7-Day trial</h2>
+                <form method="post" action="https://formspree.io/xbjllkog">
+                    <label>
+                        Your Name:
             <input type="text" placeholder="Your Name" name="Your Name" required>
-        </label>
-        <br>
-        <label>Email:
+                    </label>
+                    <br>
+                    <label>
+                        Email:
             <input type="email" placeholder="Email" name="email" required>
-        </label>
-        <br>
-        <label>Your Messege:
+                    </label>
+                    <br>
+                    <label>
+                        Your Messege:
             <textarea name="Your Messege"></textarea>
-        </label>
-        </form>
-        <br>
-        <form>
-            <button>Send</button>
-        </form>
-    </section>
-    </main>
-    <footer>
-        <p>Follow Shadowlands</p>
-        <a href="#">
-        <img src="img/facebook.jpg" alt="facebook" width=50>
-        </a>
-        <a href="#">
-        <img src="img/Instagram.jpg" alt="Instagram" width=50>
-        </a>
-        <a href="#">
-        <img src="img/youtube.jpg" alt="youtube" width=50>
-        </a>
-        <nav>
-            <a href="#">About</a>
-            <a href="#">Support</a>
-            <a href="#">Contact us</a>
-            <a href="#">Privacy Policy</a>
-        </nav>
-    </footer>
-</body>
+                    </label>
+                </form>
+                <br>
+                <form>
+                    <button>Send</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>Follow Shadowlands</p>
+            <a href="#">
+                <img src="img/facebook.jpg" alt="facebook" width=50>
+            </a>
+            <a href="#">
+                <img src="img/Instagram.jpg" alt="Instagram" width=50>
+            </a>
+            <a href="#">
+                <img src="img/youtube.jpg" alt="youtube" width=50>
+            </a>
+            <nav>
+                <a href="#">About</a>
+                <a href="#">Support</a>
+                <a href="#">Contact us</a>
+                <a href="#">Privacy Policy</a>
+            </nav>
+        </footer>
+        -->
+    </body>
 </html>
