@@ -24,6 +24,7 @@ header nav .menu {
     padding: 0;
     list-style: none;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 header nav .menu a {
@@ -65,17 +66,7 @@ header .banner h1 {
     font-family: 'Gloria Hallelujah', cursive;
 }
 
-main .new-updates .updates img {
-    width: 100%;
-    display: block;
-}
-
-.updates .buttons {
-    display: flex;
-    justify-content: space-around;
-}
-
-@media (min-width: 500px) {
+/*@media (min-width: 500px) {
     .new-updates {
         display: grid;
         grid-template-rows: 1fr 1fr;
@@ -94,7 +85,7 @@ main .new-updates .updates img {
         grid-template-rows: 1fr 1fr 1fr 1fr;
     }
 }
-
+*/
 .button {
     display: inline-block;
     padding: 0.35em 1.2em;
@@ -114,16 +105,205 @@ main .new-updates .updates img {
     color: #000000;
     background-color: orangered;
     cursor: pointer;
+
 }
 
 .updates-button {
+    display: flex;
+    justify-content: space-around;
     border-color: orange;
     color: orange;
     background-color: transparent;
+    cursor: pointer;
+
+}
+.buy {
+    text-align: center;
 }
 
-.updates-button:hover {
-    background-color: orangered;
-    color: black;
+.buy-button {
+    justify-content: center;
+    align-items: center;
+    border-color: orange;
+    color: orange;
+    background-color: transparent;
     cursor: pointer;
+    display: inline-block;
+    height:70px;
+    width:320px;
+    line-height:70px;
+    text-align:center;
+}
+
+.buy-button:hover {
+    color: #000000;
+    background-color: orangered;
+    cursor: pointer;
+}
+
+.send-button {
+    border-color: orange;
+    color: orange;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.send-button:hover {
+    color: #000000;
+    background-color: orangered;
+    cursor: pointer;
+}
+
+.updates {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.update-text {
+    align: left;
+    font-size: 0.7rem;
+     background-color: black;
+}
+ 
+.update-pic {
+  overflow: hidden;
+  max-width: 200px;
+  background-color: black;
+}
+
+table {
+	table-layout:fixed; 
+}
+table td {
+	overflow:hidden;
+}
+table td:nth-of-type(1) {
+	width:150px;
+}
+table td:nth-of-type(2) {
+	width:400px;
+}
+table td:nth-of-type(3) {
+	width:150px;
+}
+table td:nth-of-type(4) {
+	width:400px;
+}
+
+.trial {
+    text-align: center;
+}
+
+:placeholder {
+ color: gray;
+}
+::-webkit-input-placeholder {
+ color: gray;
+}
+
+*:focus {outline: none;}
+
+.contact_form h2, .contact_form label {
+font-family: 'Gloria Hallelujah', cursive;
+}
+.form_hint, .required_notification {
+font-size: 11px;
+}
+
+.contact_form ul {
+ width:750px;
+ list-style-type:none;
+ list-style-position:outside;
+}
+.contact_form li{
+ padding:12px;
+ position:relative;
+}
+
+.contact_form h2 {
+ margin:0;
+ display: inline;
+}
+.required_notification {
+ color:#d45252;
+ margin:5px 0 0 0;
+ display:inline;
+ float:right;
+}
+
+.contact_form label {
+ width:150px;
+ margin-top: 3px;
+ display:inline-block;
+ padding:3px;
+}
+.contact_form input {
+ height:20px;
+ width:220px;
+ padding:5px 8px;
+}
+.contact_form textarea {padding:8px; width:300px;}
+.contact_form button {margin-left:156px;}
+
+footer {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0;
+
+}
+
+footer .follow {
+  
+    display: flex;
+    padding: 0;
+    list-style: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+footer nav {
+    font-size: 1rem;
+    display: flex;
+    padding: 0;
+    list-style: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-color);
+    border: 1px solid transparent;
+    padding: 5px;
+}
+
+footer nav a:hover {
+    border: 1px solid var(--main-color);
+}
+
+hr {
+    border: none; 
+    background-color: orange;
+    color: orange;
+    height: 2px; 
+   }
+
+
+   #content_mobie{
+    display:none;
+}
+ 
+@media (max-width:480px){
+ body 
+    #desktop{
+        display:none;
+    }
+    #mobile{
+        display: inline;
+    }
 }
