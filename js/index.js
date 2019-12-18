@@ -1,8 +1,9 @@
-sendButton.onclick 
-fetch('')
-  .then(response => response.json())
-  .then(json => console.log(json))
-
+document.querySelector('submit').addEventListener('click', getData);
+function getData() {
+    fetch('')
+    .then(response => response.json())
+    .then(json => console.log(json))
+}
 
 
 var slideIndex = 1;
