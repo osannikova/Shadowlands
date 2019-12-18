@@ -1,26 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Log In</title>
-</head>
-<body>
-    <section>
-        <h1>Log In</h1>
-        <form class="login-form">
-            <label>
-                Name: <input type="text" name="name">
-            </label>
-            <br>
-            <label>
-                Password: <input type="password" name="password">
-            </label>
-            <br>
-            <input type="submit">
-        </form>
-    </section>
 
-</body>
-</html>
+<form id="LoginForm" onsubmit="return false">
+    <h1>Login Form</h1>
+    <div class="FormRow">
+        <label for="Username">Username:</label>
+        <input type="text" size="15" id="Username" name="Username">
+    </div>
+    <div class="FormRow">
+        <label for="Password">Password:</label>
+        <input type="password" size="15" id="Password" name="Password">
+    </div>
+    <div class="FormRow" id="LoginButtonDiv">
+        <input type="submit" value="Login">
+    </div>
+    <div id="BadLogin">
+        <p>The login information you entered does not match
+        an account in our records. Please try again.</p>
+    </div>
+</form>
