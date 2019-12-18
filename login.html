@@ -1,19 +1,35 @@
 
 <form id="LoginForm" onsubmit="return false">
     <h1>Login Form</h1>
-    <div class="FormRow">
-        <label for="Username">Username:</label>
-        <input type="text" size="15" id="Username" name="Username">
+    <div class="container">
+<h2>Contact us to get the 7-Day trial</h2>
+  <form method="post" action="https://formspree.io/xbjllkog">
+    <div class="row">
+      <div class="col-25">
+        <label for="name">Your Name:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="name" name="name" placeholder="Your name:" required>
+      </div>
     </div>
-    <div class="FormRow">
-        <label for="Password">Password:</label>
-        <input type="password" size="15" id="Password" name="Password">
+    <div class="row">
+      <div class="col-25">
+        <label for="email">Email</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="email" name="email" placeholder="Your Email:" required>
+      </div>
     </div>
-    <div class="FormRow" id="LoginButtonDiv">
-        <input type="submit" value="Login">
+    <div class="row">
+      <div class="col-25">
+        <label for="message">Your Messege</label>
+      </div>
+      <div class="col-75">
+        <textarea id="message" name="message" placeholder="Your Messege:" style="height:200px" required></textarea>
+      </div>
     </div>
-    <div id="BadLogin">
-        <p>The login information you entered does not match
-        an account in our records. Please try again.</p>
+    <div class="row">
+      <input type="submit" value="Submit">
     </div>
-</form>
+  </form>
+</div>
