@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Solway&display=swap');
 
 :root {
+    margin: auto;
     font-family: 'Solway', serif;
     --main-color: orange;
     color: orange;
@@ -17,6 +18,7 @@ header .logo {
     font-size: 3rem;
     text-align: center;
     margin: 1rem 0;
+    color: orange;
 }
 
 header nav .menu {
@@ -59,6 +61,7 @@ header .banner {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
 }
 
 header .banner h1 {
@@ -86,7 +89,9 @@ header .banner h1 {
     background-color: orangered;
     cursor: pointer;
 }
-
+#mainText {
+    text-align: center;
+}
 .updates-button {
     display: flex;
     justify-content: space-around;
@@ -143,7 +148,7 @@ header .banner h1 {
 .update-text {
     align: left;
     font-size: 0.7rem;
-     background-color: black;
+    background-color: black;
 }
  
 .update-pic {
@@ -175,7 +180,7 @@ footer {
     font-family: 'Gloria Hallelujah', cursive;
     font-size: 2rem;
     text-align: center;
-    margin: 1rem 0;
+    margin: auto;
 }
 
 footer .follow {

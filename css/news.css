@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Solway&display=swap');
+
+:root {
+    margin: auto;
+    font-family: 'Solway', serif;
+    --main-color: orange;
+    color: orange;
+}
+
+body {
+    background-color: rgb(54, 25, 3);
+    max-width: 980px;
+    margin: auto;
+}
+
+header  a {
+    text-decoration: none;
+}
+
+a:hover {
+     text-decoration: none; 
+}
+
+header .logo {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 3rem;
+    text-align: center;
+    margin: 1rem 0;
+    color: orange;
+}
+
+header nav .menu {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+header nav .menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-color);
+    border: 1px solid transparent;
+    padding: 5px;
+}
+
+header nav .menu a:hover {
+    border: 1px solid var(--main-color);
+}
+
+@media (min-width: 600px) {
+    header nav {
+        display: flex;
+        align-items: center;
+    }
+
+    header .menu {
+        flex: 1;
+    }
+}
+.update-text {
+text-align: justify; 
+}
+
+.update-pic {
+    display: flex;
+  overflow: hidden;
+  background-color: black;
+  margin: auto;
+  align-items: center;
+}
+
+footer {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 2rem;
+    text-align: center;
+    margin: auto;
+}
+
+footer .follow {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer nav {
+    font-size: 1rem;
+    display: flex;
+    padding: 0;
+    list-style: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-color);
+    border: 1px solid transparent;
+    padding: 5px;
+}
+
+footer nav a:hover {
+    border: 1px solid var(--main-color);
+}
+
+hr {
+    border: none; 
+    background-color: orange;
+    color: orange;
+    height: 2px; 
+   }
