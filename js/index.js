@@ -32,3 +32,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+const clock = document.querySelector('.clock');
+const updateTime = () => (clock.innerHTML = new Date().toLocaleTimeString());
+setInterval(updateTime, 1000);
+
